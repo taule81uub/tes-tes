@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+ <div>
+   <input type="checkbox">
+   <img src="800px-12in-Vinyl-LP-Record-Angle.png">
+ </div>
+ <div>
+     <input type="checkbox">
+     <img src="800px-12in-Vinyl-LP-Record-Angle.png">
+ </div>
+ <audio controls>
+   <source src="wana be.mp3">
+ </audio>
+ <style>
+   div {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 200px;
+     height: 200px;
+     background: url(IMG-20241116-WA0008.jpg);
+     background-size: 100%;
+     border: 10px inset #FFC0CB;
+   }
+   @keyframes rotate {
+     to {rotate: 350deg;}
+   }
+   div input {
+     width: 200px;
+     height: 200px;
+     appearance: none;
+     position: absolute;
+   }
+   input:checked ~ img {
+     translate: 140px 0;
+     animation: rotate 2s linear infinite;
+   }
+   div img {
+     transition: 1s;
+     width: 200px;
+     height:200px;
+     z-index: -1;
+   }
+ </style>
+ </body>
+</html>
+ 
+   
+ 
+   
